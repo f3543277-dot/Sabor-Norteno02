@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Sabor Norteño: una propuesta de gastronomía peruana inspirada en los sabores tradicionales del norte del Perú.">
+  <meta name="theme-color" content="#321b12">
+  <title>Sabor Norteño | Tradición y sazón del norte peruano</title>
+
+  <!-- Bootstrap 5: sistema de cuadrícula, componentes y diseño adaptable -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Tipografías personalizadas -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Hoja de estilos propia -->
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+  <a class="salto-contenido" href="#contenido">Saltar al contenido principal</a>
+
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark encabezado sticky-top" aria-label="Navegación principal">
+      <div class="container">
+        <a class="navbar-brand marca" href="#inicio" aria-label="Sabor Norteño, ir al inicio">
+          <span class="marca-nombre">Sabor Norteño</span>
+          <span class="marca-lema">Tradición que se disfruta</span>
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+          data-bs-target="#menuPrincipal" aria-controls="menuPrincipal"
+          aria-expanded="false" aria-label="Abrir o cerrar el menú de navegación">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-end" id="menuPrincipal">
+          <ul class="navbar-nav align-items-lg-center gap-lg-2">
+            <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
+            <li class="nav-item"><a class="nav-link" href="#nosotros">Nosotros</a></li>
+            <li class="nav-item"><a class="nav-link" href="#menu">Nuestra carta</a></li>
+            <li class="nav-item"><a class="nav-link" href="#galeria">Galería</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main id="contenido">
+    <section id="inicio" class="inicio d-flex align-items-center text-center" aria-labelledby="titulo-principal">
+      <div class="container inicio-contenido">
+        <p class="subtitulo animacion-etiqueta">Gastronomía peruana</p>
+        <h1 id="titulo-principal" class="titulo-principal">El auténtico sabor del norte del Perú</h1>
+        <p class="texto-portada mx-auto">Disfruta de recetas tradicionales, ingredientes frescos y el sabor que representa nuestra tierra.</p>
+        <a href="#menu" class="btn boton-principal">Descubrir nuestra carta</a>
+      </div>
+      <a class="indicador-scroll" href="#nosotros" aria-label="Desplazarse a la sección Nosotros">⌄</a>
+    </section>
+
+    <section id="nosotros" class="seccion" aria-labelledby="titulo-nosotros">
+      <div class="container">
+        <div class="encabezado-seccion text-center">
+          <span class="sobrelinea">Nuestra esencia</span>
+          <h2 id="titulo-nosotros">Una tradición que llega a tu mesa</h2>
+          <p>Conoce nuestra propuesta inspirada en la gastronomía del norte peruano.</p>
+        </div>
+
+        <div class="row align-items-center g-5">
+          <div class="col-lg-6">
+            <h3 class="titulo-secundario">¿Quiénes somos?</h3>
+            <p><strong>Sabor Norteño</strong> es una propuesta de restaurante dedicada a compartir platos tradicionales de la gastronomía peruana, especialmente los sabores característicos del norte del país.</p>
+            <p>Buscamos ofrecer una experiencia agradable mediante recetas representativas, ingredientes seleccionados y una presentación que valore nuestra identidad culinaria.</p>
+
+            <div class="row g-3 mt-2">
+              <div class="col-sm-6">
+                <article class="valor-card h-100">
+                  <h3>Misión</h3>
+                  <p>Compartir platos tradicionales de calidad y brindar una atención cordial.</p>
+                </article>
+              </div>
+              <div class="col-sm-6">
+                <article class="valor-card h-100">
+                  <h3>Visión</h3>
+                  <p>Promover y conservar los sabores que representan al norte peruano.</p>
+                </article>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <img class="imagen-nosotros" src="imagenes/restaurante.jpg"
+              alt="Ambiente interior de un restaurante de estilo cálido y acogedor" loading="lazy">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="menu" class="seccion seccion-clara" aria-labelledby="titulo-menu">
+      <div class="container">
+        <div class="encabezado-seccion text-center">
+          <span class="sobrelinea">Hecho con tradición</span>
+          <h2 id="titulo-menu">Nuestros platos típicos</h2>
+          <p>Una selección de sabores representativos de la cocina peruana.</p>
+        </div>
+
+        <div class="row g-4">
+          <article class="col-sm-6 col-xl-3">
+            <div class="card tarjeta-plato h-100">
+              <div class="contenedor-imagen-plato">
+                <img src="imagenes/ceviche.jpg" class="card-img-top" alt="Ceviche de pescado acompañado de camote y choclo" loading="lazy">
+              </div>
+              <div class="card-body d-flex flex-column">
+                <h3 class="card-title">Ceviche norteño</h3>
+                <p class="card-text">Pescado fresco marinado en limón y ají, acompañado de cebolla, camote y choclo.</p>
+                <p class="precio mt-auto">S/ 32.00</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="col-sm-6 col-xl-3">
+            <div class="card tarjeta-plato h-100">
+              <div class="contenedor-imagen-plato">
+                <img src="imagenes/arroz-con-pato.jpg" class="card-img-top" alt="Arroz con pato preparado con culantro al estilo norteño" loading="lazy">
+              </div>
+              <div class="card-body d-flex flex-column">
+                <h3 class="card-title">Arroz con pato</h3>
+                <p class="card-text">Arroz sazonado con culantro y cerveza negra, servido con una presa tierna de pato.</p>
+                <p class="precio mt-auto">S/ 38.00</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="col-sm-6 col-xl-3">
+            <div class="card tarjeta-plato h-100">
+              <div class="contenedor-imagen-plato">
+                <img src="imagenes/cabrito.jpg" class="card-img-top" alt="Seco de cabrito acompañado de arroz y frejoles" loading="lazy">
+              </div>
+              <div class="card-body d-flex flex-column">
+                <h3 class="card-title">Seco de cabrito</h3>
+                <p class="card-text">Cabrito macerado en chicha de jora y loche, acompañado de arroz y frejoles.</p>
+                <p class="precio mt-auto">S/ 36.00</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="col-sm-6 col-xl-3">
+            <div class="card tarjeta-plato h-100">
+              <div class="contenedor-imagen-plato">
+                <img src="imagenes/lomo-saltado.jpg" class="card-img-top" alt="Lomo saltado con cebolla, tomate, papas fritas y arroz" loading="lazy">
+              </div>
+              <div class="card-body d-flex flex-column">
+                <h3 class="card-title">Lomo saltado</h3>
+                <p class="card-text">Carne de res salteada con cebolla y tomate, acompañada de papas fritas y arroz.</p>
+                <p class="precio mt-auto">S/ 30.00</p>
+              </div>
+            </div>
+          </article>
+        </div>
+        <p class="aviso-precios text-center mt-4 mb-0">Nota: los precios mostrados son referenciales para esta demostración académica.</p>
+      </div>
+    </section>
+
+    <section id="galeria" class="seccion" aria-labelledby="titulo-galeria">
+      <div class="container">
+        <div class="encabezado-seccion text-center">
+          <span class="sobrelinea">Una muestra de nuestra cocina</span>
+          <h2 id="titulo-galeria">Galería</h2>
+          <p>Imágenes de algunos platos que forman parte de nuestra propuesta gastronómica.</p>
+        </div>
+
+        <div class="row g-3 galeria">
+          <div class="col-6 col-lg-3">
+            <img src="imagenes/ceviche.jpg" alt="Presentación de ceviche peruano" loading="lazy">
+          </div>
+          <div class="col-6 col-lg-3">
+            <img src="imagenes/arroz-con-pato.jpg" alt="Presentación de arroz con pato" loading="lazy">
+          </div>
+          <div class="col-6 col-lg-3">
+            <img src="imagenes/cabrito.jpg" alt="Presentación de seco de cabrito" loading="lazy">
+          </div>
+          <div class="col-6 col-lg-3">
+            <img src="imagenes/lomo-saltado.jpg" alt="Presentación de lomo saltado" loading="lazy">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contacto" class="seccion seccion-clara" aria-labelledby="titulo-contacto">
+      <div class="container">
+        <div class="encabezado-seccion text-center">
+          <span class="sobrelinea">Estamos para atenderte</span>
+          <h2 id="titulo-contacto">Contáctanos</h2>
+          <p>Este espacio puede mostrar los datos reales del restaurante cuando estén confirmados.</p>
+        </div>
+
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <div class="datos-contacto text-center">
+              <h3>Sabor Norteño</h3>
+              <p><strong>Ubicación referencial:</strong> Chiclayo, Lambayeque, Perú.</p>
+              <p class="mb-0">Agrega aquí un número telefónico, correo y horario reales antes de publicar el sitio como página comercial.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="row justify-content-center mt-4">
+          <div class="col-lg-8">
+            <form class="formulario" id="formularioContacto">
+              <h3>Formulario de demostración</h3>
+              <p class="texto-formulario">Completa los campos para probar la validación del formulario.</p>
+
+              <div class="mb-3">
+                <label for="nombre" class="form-label">Nombre</label>
+                <input type="text" class="form-control" id="nombre" name="nombre"
+                  placeholder="Escribe tu nombre" autocomplete="name" required>
+              </div>
+
+              <div class="mb-3">
+                <label for="correo" class="form-label">Correo electrónico</label>
+                <input type="email" class="form-control" id="correo" name="correo"
+                  placeholder="ejemplo@correo.com" autocomplete="email" required>
+              </div>
+
+              <div class="mb-3">
+                <label for="mensaje" class="form-label">Mensaje</label>
+                <textarea class="form-control" id="mensaje" name="mensaje" rows="4"
+                  placeholder="Escribe tu mensaje" required></textarea>
+              </div>
+
+              <button type="submit" class="btn boton-principal">Probar formulario</button>
+              <p id="respuestaFormulario" class="mensaje-formulario mt-3 mb-0"
+                role="status" aria-live="polite"></p>
+              <p class="nota-dato mt-2 mb-0">Importante: por ahora no se envían datos a un correo ni a un servidor. Es una demostración de validación con JavaScript.</p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="pie-pagina text-center">
+    <div class="container">
+      <h2>Sabor Norteño</h2>
+      <p>Tradición, calidad y sabor peruano.</p>
+      <p class="mb-0">© 2026 Sabor Norteño. Proyecto académico.</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap Bundle: necesario para abrir y cerrar el menú móvil -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    // Validación visual de demostración. No transmite información a internet.
+    const formulario = document.getElementById("formularioContacto");
+    const respuesta = document.getElementById("respuestaFormulario");
+
+    formulario.addEventListener("submit", function (evento) {
+      evento.preventDefault();
+      respuesta.textContent = "¡Formulario validado! Esta es una demostración: el mensaje no se ha enviado.";
+      formulario.reset();
+    });
+  </script>
+</body>
+</html>

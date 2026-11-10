@@ -1,0 +1,358 @@
+/* =========================================================
+   SABOR NORTEÑO
+   Hoja de estilos personalizada sobre Bootstrap 5
+   ========================================================= */
+
+:root {
+  --marron: #542d1d;
+  --marron-oscuro: #321b12;
+  --naranja: #a84f15;
+  --naranja-hover: #873d10;
+  --dorado: #ffc857;
+  --crema: #fffaf2;
+  --crema-oscuro: #f7ead7;
+  --texto: #38332f;
+  --texto-secundario: #62564e;
+}
+
+* { box-sizing: border-box; }
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 90px;
+}
+
+body {
+  margin: 0;
+  color: var(--texto);
+  background: var(--crema);
+  font-family: "DM Sans", Arial, sans-serif;
+  line-height: 1.7;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+h1, h2, h3, .marca-nombre {
+  font-family: "Playfair Display", Georgia, serif;
+}
+
+/* Enlace para saltar directamente al contenido con teclado */
+.salto-contenido {
+  position: absolute;
+  top: -70px;
+  left: 12px;
+  z-index: 2000;
+  padding: 10px 15px;
+  color: var(--marron-oscuro);
+  background: #fff;
+  border: 2px solid var(--marron);
+  border-radius: 6px;
+}
+
+.salto-contenido:focus { top: 10px; }
+
+/* Navegación */
+.encabezado {
+  background: var(--marron-oscuro);
+  box-shadow: 0 3px 15px #0002;
+}
+
+.marca {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.15;
+}
+
+.marca-nombre {
+  color: var(--dorado);
+  font-size: 1.55rem;
+  font-weight: 800;
+}
+
+.marca-lema {
+  color: #fff;
+  font-size: .75rem;
+  letter-spacing: .04em;
+}
+
+.navbar-nav .nav-link {
+  color: #fff;
+  font-weight: 600;
+  padding: .7rem .85rem !important;
+  transition: color .25s ease, transform .25s ease;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link:focus {
+  color: var(--dorado);
+  transform: translateY(-2px);
+}
+
+/* Portada */
+.inicio {
+  position: relative;
+  min-height: 86vh;
+  padding: 6rem 1rem;
+  color: #fff;
+  background:
+    linear-gradient(90deg, #160d09d9, #160d096b),
+    url("imagenes/portada.jpg") center/cover no-repeat;
+}
+
+.inicio-contenido { max-width: 850px; }
+
+.subtitulo, .sobrelinea {
+  color: var(--naranja);
+  font-size: .85rem;
+  font-weight: 700;
+  letter-spacing: .16em;
+  text-transform: uppercase;
+}
+
+.inicio .subtitulo { color: var(--dorado); }
+
+.titulo-principal {
+  margin: 1rem 0;
+  font-size: clamp(2.5rem, 6vw, 4.7rem);
+  line-height: 1.12;
+}
+
+.texto-portada {
+  max-width: 650px;
+  font-size: clamp(1rem, 2vw, 1.25rem);
+}
+
+.boton-principal {
+  padding: .85rem 1.6rem;
+  color: #fff;
+  background: var(--naranja);
+  border: 2px solid var(--naranja);
+  border-radius: 999px;
+  font-weight: 700;
+  transition: background .25s ease, border-color .25s ease,
+    transform .25s ease, box-shadow .25s ease;
+}
+
+.boton-principal:hover {
+  color: #fff;
+  background: var(--naranja-hover);
+  border-color: var(--naranja-hover);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 18px #0003;
+}
+
+.indicador-scroll {
+  position: absolute;
+  bottom: 18px;
+  left: 50%;
+  color: #fff;
+  font-size: 2rem;
+  text-decoration: none;
+}
+
+/* Secciones generales */
+.seccion { padding: 5.5rem 0; }
+.seccion-clara { background: var(--crema-oscuro); }
+
+.encabezado-seccion {
+  max-width: 760px;
+  margin: 0 auto 3rem;
+}
+
+.encabezado-seccion h2 {
+  margin: .45rem 0 .7rem;
+  color: var(--marron);
+  font-size: clamp(2rem, 4vw, 2.8rem);
+}
+
+.encabezado-seccion p { color: var(--texto-secundario); margin: 0; }
+.titulo-secundario { color: var(--marron); font-size: 1.8rem; }
+
+.valor-card {
+  height: 100%;
+  padding: 1.2rem;
+  background: #fff;
+  border-left: 4px solid var(--naranja);
+  border-radius: 0 12px 12px 0;
+}
+
+.valor-card h3 {
+  color: var(--marron);
+  font-size: 1.25rem;
+}
+
+.valor-card p { margin: 0; font-size: .95rem; }
+
+.imagen-nosotros {
+  width: 100%;
+  height: 440px;
+  object-fit: cover;
+  border-radius: 18px;
+  box-shadow: 0 14px 35px #321b1226;
+}
+
+/* Tarjetas de platos */
+.tarjeta-plato {
+  overflow: hidden;
+  border: 0;
+  border-radius: 16px;
+  box-shadow: 0 5px 20px #321b1215;
+  transition: transform .3s ease, box-shadow .3s ease;
+}
+
+.tarjeta-plato:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 30px #321b1228;
+}
+
+.contenedor-imagen-plato { overflow: hidden; }
+
+.tarjeta-plato img {
+  width: 100%;
+  height: 215px;
+  object-fit: cover;
+  transition: transform .4s ease;
+}
+
+.tarjeta-plato:hover img { transform: scale(1.07); }
+
+.tarjeta-plato .card-title {
+  color: var(--marron);
+  font-size: 1.3rem;
+}
+
+.tarjeta-plato .card-text { color: var(--texto-secundario); }
+
+.precio {
+  margin-bottom: 0;
+  color: var(--naranja);
+  font-size: 1.3rem;
+  font-weight: 800;
+}
+
+.aviso-precios, .nota-dato {
+  color: var(--texto-secundario);
+  font-size: .85rem;
+}
+
+/* Galería */
+.galeria img {
+  width: 100%;
+  height: 230px;
+  object-fit: cover;
+  border-radius: 12px;
+  transition: transform .35s ease, filter .35s ease;
+}
+
+.galeria img:hover {
+  transform: scale(1.035);
+  filter: saturate(1.12);
+}
+
+/* Contacto y formulario */
+.datos-contacto, .formulario {
+  padding: 2rem;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 5px 22px #321b1212;
+}
+
+.datos-contacto h3, .formulario h3 {
+  margin-bottom: 1rem;
+  color: var(--marron);
+  font-size: 1.5rem;
+}
+
+.form-control {
+  padding: .8rem 1rem;
+  border-color: #b9a99b;
+}
+
+.form-control:focus {
+  border-color: var(--naranja);
+  box-shadow: 0 0 0 .2rem #a84f1530;
+}
+
+.form-label { font-weight: 700; }
+.texto-formulario { color: var(--texto-secundario); }
+.mensaje-formulario { color: #245b35; font-weight: 700; }
+
+/* Pie de página */
+.pie-pagina {
+  padding: 3rem 1rem;
+  color: #fff;
+  background: var(--marron-oscuro);
+}
+
+.pie-pagina h2 {
+  color: var(--dorado);
+  font-size: 1.8rem;
+}
+
+/* =========================================================
+   CINCO ANIMACIONES CSS DIFERENTES
+   1. aparecer       2. entradaTitulo
+   3. crecerSuave    4. zoomEntrada
+   5. rebote
+   ========================================================= */
+
+.animacion-etiqueta { animation: aparecer 1s ease both; }
+.titulo-principal { animation: entradaTitulo 1s .15s ease both; }
+.texto-portada { animation: aparecer 1s .35s ease both; }
+.inicio .boton-principal { animation: crecerSuave .8s .55s ease both; }
+.imagen-nosotros { animation: zoomEntrada 1s .25s ease both; }
+.indicador-scroll { animation: rebote 1.5s ease-in-out infinite; }
+
+@keyframes aparecer {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes entradaTitulo {
+  from { opacity: 0; transform: translateY(28px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes crecerSuave {
+  from { opacity: 0; transform: scale(.88); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+@keyframes zoomEntrada {
+  from { opacity: 0; transform: scale(.94); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+@keyframes rebote {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(9px); }
+}
+
+/* Foco visible para navegación con teclado */
+a:focus-visible, button:focus-visible,
+input:focus-visible, textarea:focus-visible {
+  outline: 3px solid var(--dorado);
+  outline-offset: 3px;
+}
+
+/* Ajustes para celulares y tablets */
+@media (max-width: 767.98px) {
+  .inicio { min-height: 78vh; }
+  .seccion { padding: 4rem 0; }
+  .imagen-nosotros { height: 320px; }
+  .galeria img { height: 170px; }
+  .datos-contacto, .formulario { padding: 1.4rem; }
+}
+
+/* Respeta la preferencia del usuario de reducir movimiento */
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after {
+    animation-duration: .01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: .01ms !important;
+  }
+}
